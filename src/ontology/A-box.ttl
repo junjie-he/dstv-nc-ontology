@@ -1,0 +1,65 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@prefix ioc: <http://w3id.org/ioc#> .
+@prefix dstv: <http://w3id.org/dstv#> .
+@prefix inst: <http://w3id.org/dstv-test01#>.
+@base <http://w3id.org/dstv-test01#> .
+
+
+#################################################################
+#    Instances
+#################################################################
+
+
+###  http://w3id.org/dstv-test01#CutProcess_00
+#        inst:CutProcess_00 a dstv:MitreCut ;
+#                         dstv:hasLevel inst:Level_00 ;
+#                         dstv:hasDimensionalReference inst:DimRef_t_01 ;
+#                         dstv:hasMeasurement inst:MeasureProcess_01 ;
+#                         dstv:hasReferenceView inst:RefView_f_01 ;
+#                         dstv:hasVertex inst:Vertex_01 ;
+#                         ioc:hasOutputElement inst:Mitre_00 ;
+#                         ioc:hasSucessor inst:DrillProcess_01 .
+
+###  http://w3id.org/dstv-test01#DrillProcess_01
+inst:DrillProcess_01 a dstv:ThroughHoleDrill ;
+                 dstv:hasDiameter inst:Diameter_01 ;
+                 dstv:hasDimensionalReference inst:DimRef_t_01 ;
+                 dstv:hasMeasurement inst:MeasureProcess_01 ;
+                 dstv:hasReferenceView inst:RefView_f_01 ;
+                 dstv:hasVertex inst:Vertex_01 ;
+                 ioc:hasOutputElement inst:ThroughHole_01 ;
+                 ioc:hasSucessor inst:DrillProcess_02 .
+
+
+inst:Diameter_01 a dstv:Diameter ;
+                 dstv:hasPlannedDiameter dstv:PlannedDiameter_01 ;
+                 dstv:hasMeasuredDiameter dstv:MeasuredDiameter_01 ;
+                 dstv:hasDiameterDeviation dstv:DiameterDeviation_01 ;
+                 dstv:hasDDiameterTolerance dstv:DiameterTolerance_01 .
+
+
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX schema: <https://schema.org/>
+PREFIX dstv: <http://w3id.org/dstv#>
+PREFIX inst: <http://w3id.org/dstv-test01#>
+Insert {?plandia schema:value "18.0"^^xsd:float}
+where {
+    inst:DrillProcess_01 dstv:hasDiameter ?diameter.
+    ?diameter dstv:hasPlannedDiameter ?plandia.
+    }
+
+
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX schema: <https://schema.org/>
+PREFIX dstv: <http://w3id.org/dstv#>
+PREFIX inst: <http://w3id.org/dstv-test01#>
+Select ?plandia
+where {
+    inst:DrillProcess_01 dstv:hasDiameter ?diameter.
+    ?diameter dstv:hasPlannedDiameter ?plandia.
+    }
