@@ -58,6 +58,11 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                        rdfs:range <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcVoidingFeature> .
 
 
+###  http://w3id.org/dstv#hasAngle
+:hasAngle rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :hasFeature .
+
+
 ###  http://w3id.org/dstv#hasDeviationValues
 :hasDeviationValues rdf:type owl:ObjectProperty ;
                     rdfs:domain :FeatureValues ;
@@ -126,6 +131,11 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 :hasMeasurement rdf:type owl:ObjectProperty ;
                 rdfs:domain :Drill ;
                 rdfs:range :MeasurementProcess .
+
+
+###  http://w3id.org/dstv#hasPlannedAngle
+:hasPlannedAngle rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :hasPlannedValue .
 
 
 ###  http://w3id.org/dstv#hasPlannedDiameter
@@ -231,6 +241,11 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                    rdfs:subClassOf <http://w3id.org/ioc#Process> .
 
 
+###  http://w3id.org/dstv#Angle
+:Angle rdf:type owl:Class ;
+       rdfs:subClassOf :FeatureValues .
+
+
 ###  http://w3id.org/dstv#BottomReference
 :BottomReference rdf:type owl:Class ;
                  rdfs:subClassOf :DimensionalReference ;
@@ -241,6 +256,16 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 :BottomView rdf:type owl:Class ;
             rdfs:subClassOf :ReferenceView ;
             rdfs:comment "b" .
+
+
+###  http://w3id.org/dstv#Cut
+:Cut rdf:type owl:Class ;
+     rdfs:subClassOf :ProductionProcess .
+
+
+###  http://w3id.org/dstv#CutMeasurement
+:CutMeasurement rdf:type owl:Class ;
+                rdfs:subClassOf :MeasurementProcess .
 
 
 ###  http://w3id.org/dstv#Depth
@@ -397,6 +422,24 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                     rdfs:subClassOf <http://w3id.org/ioc#Process> .
 
 
+###  http://w3id.org/dstv#MitreCut
+:MitreCut rdf:type owl:Class ;
+          rdfs:subClassOf :Cut ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasAngle ;
+                            owl:allValuesFrom :Angle
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasMeasurement ;
+                            owl:allValuesFrom :MitreCutMeasurement
+                          ] .
+
+
+###  http://w3id.org/dstv#MitreCutMeasurement
+:MitreCutMeasurement rdf:type owl:Class ;
+                     rdfs:subClassOf :CutMeasurement .
+
+
 ###  http://w3id.org/dstv#PlannedDepth
 :PlannedDepth rdf:type owl:Class ;
               rdfs:subClassOf :PlannedValues .
@@ -439,6 +482,20 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 ###  http://w3id.org/dstv#ReferenceView
 :ReferenceView rdf:type owl:Class .
+
+
+###  http://w3id.org/dstv#SawCut
+:SawCut rdf:type owl:Class ;
+        rdfs:subClassOf :Cut ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasMeasurement ;
+                          owl:allValuesFrom :SawCutMeasurement
+                        ] .
+
+
+###  http://w3id.org/dstv#SawCutMeasurement
+:SawCutMeasurement rdf:type owl:Class ;
+                   rdfs:subClassOf :CutMeasurement .
 
 
 ###  http://w3id.org/dstv#SymmetricalReference
