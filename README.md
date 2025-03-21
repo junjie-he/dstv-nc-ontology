@@ -1,5 +1,7 @@
 # DSTV:Steel Construction Ontology
 
+## Overview 
+DSTV:Steel Construction Ontology is sub-domain ontology linked to the top-level process ontology Internet of Construction Process Ontology(ioc), which is available at [http://w3id.org/ioc#](http://w3id.org/ioc#)
 
 ### grasshopper-SPARQL
 
@@ -13,5 +15,8 @@
 
 ## Developing
 
-1. Install RhinoWIP & Visual Studio Community for Mac
-2. Install https://github.com/mcneel/RhinoCommonXamarinStudioAddin
+The extended DSTV:Steel Construction Ontology is capable of:
+1. Visualize geometric features described in DSTV-NC interface
+2. Validate dimentional deviations against DIN norm tolerances
+3. Adjust plan values to compensate deviations
+
