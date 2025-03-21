@@ -12,7 +12,7 @@ The extended DSTV:Steel Construction Ontology is capable of:
 3. Adjust plan values to compensate deviations
 
 
-### grasshopper-SPARQL
+### 1. Visualization
 
 **GhPython script for querying the ontology with SPARQL and visualize the DSTV geometries in Rhino7.**
 
