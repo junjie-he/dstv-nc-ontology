@@ -18,6 +18,7 @@ The extended DSTV:Steel Construction Ontology is capable of:
 
 ![App Screenshot](https://github.com/junjie-he/dstv-nc-ontology/blob/junjie-he-patch-1/images/ghpython%20components.png))
 
+**Note**
 1. Replace the SPARQL script path with your own absolute path to external script.
 2. Run the GhPython script to call the external script.
 
