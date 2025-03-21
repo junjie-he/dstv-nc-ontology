@@ -6,8 +6,8 @@ DSTV:Steel Construction Ontology
 
 ![App Screenshot](https://github.com/junjie-he/dstv-nc-ontology/blob/junjie-he-patch-1/images/ghpython%20components.png))
 
-1. Change the SPARQL script path to your own absolute path to external script.
-2. Run the GhPython script.
+1. Replace the SPARQL script path with your own absolute path to external script.
+2. Run the GhPython script to call the external script.
 
 
 ## Developing
