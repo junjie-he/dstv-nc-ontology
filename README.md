@@ -16,7 +16,7 @@ The extended DSTV:Steel Construction Ontology is capable of:
 
 **GhPython script for querying the ontology with SPARQL and visualize the DSTV geometries in Rhino7.**
 
-![App Screenshot](https://github.com/junjie-he/dstv-nc-ontology/blob/junjie-he-patch-1/images/ghpython%20components.png))
+![App Screenshot](https://github.com/junjie-he/dstv-nc-ontology/blob/junjie-he-patch-1/images/ghpython%20components.png)
 
 **Note**
 1. Replace the SPARQL script path with your own absolute path to external script.
