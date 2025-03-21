@@ -1,5 +1,5 @@
-# dstv-nc-ontology
-DSTV:Steel Construction Ontology
+# DSTV:Steel Construction Ontology
+
 
 ### grasshopper-SPARQL
 
