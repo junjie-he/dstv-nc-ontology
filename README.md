@@ -1,7 +1,7 @@
 # DSTV:Steel Construction Ontology
 
 ## Overview 
-DSTV:Steel Construction Ontology is sub-domain ontology linked to the top-level process ontology Internet of Construction Process Ontology(ioc), which is available at [http://w3id.org/ioc#](http://w3id.org/ioc#)
+DSTV:Steel Construction Ontology is sub-domain ontology linked to the top-level process ontology Internet of Construction Process Ontology(ioc)[http://w3id.org/ioc#](http://w3id.org/ioc#)
 
 ### grasshopper-SPARQL
 
