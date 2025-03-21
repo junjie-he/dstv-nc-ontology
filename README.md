@@ -6,10 +6,10 @@ DSTV:Steel Construction Ontology is sub-domain ontology linked to the top-level 
 
 ## Developing
 
-The extended DSTV:Steel Construction Ontology is capable of linking heterogenous data to:
-1. Visualize geometric features described in DSTV-NC interface
-2. Validate dimentional deviations against DIN norm tolerances
-3. Adjust plan values to compensate deviations
+The extended DSTV:Steel Construction Ontology is capable of linking heterogenous data for:
+1. Visualizing geometric features described in DSTV-NC interface
+2. Validating dimentional deviations against DIN norm tolerances
+3. Adjusting plan values to compensate deviations
 
 
 ### 1. Visualization
