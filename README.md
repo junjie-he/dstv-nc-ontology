@@ -1,5 +1,6 @@
 # dstv-nc-ontology
 DSTV:Steel Construction Ontology
+
 ### grasshopper-SPARQL
 
 **GhPython script for querying the ontology with SPARQL.**
