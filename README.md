@@ -1,8 +1,6 @@
 # DSTV:Steel Construction Ontology
 
 ## Overview 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-https://github.com/junjie-he/dstv/blob/develop
 
 DSTV:Steel Construction Ontology is sub-domain ontology linked to the top-level process ontology Internet of Construction Process Ontology(ioc).
 
