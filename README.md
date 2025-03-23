@@ -8,9 +8,9 @@ DSTV:Steel Construction Ontology is sub-domain ontology linked to the top-level 
 
 The extended DSTV:Steel Construction Ontology is capable of linking heterogenous data for:
 1. Visualizing features described in DSTV-NC interface
-2. Enabling data sharing between CNC machines and robotics
-3. Validating deviations against DIN norm tolerances
-4. Adjusting plan values to compensate deviations
+2. Validating deviations against DIN norm tolerances
+3. Adjusting plan values to compensate deviations
+4. Enabling semantic interoperability between CNC machines and robotics
 
 
 ### 1. Visualization
